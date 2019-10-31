@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	width: 150px;
+}
+/* Header/logo Title */
+.header {
+	padding: 100px;
+	text-align: center;
+	text-shadow: 4px 4px 10px purple;
+	color: white;
+	background-blend-mode: lighten;
+	background-position: center; /* centrer l'image → https://www.w3schools.com/cssref/pr_background-position.asp */
+	background-repeat: no-repeat; /* pas de répétition */
+	background-size: cover; /* étirer l'image */
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+	font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+	overflow: auto;
+	background-color: #151515;
+	position: sticky;
+	height: 100%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+	background-color: #FFCE40;
+	color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+	background-color: #5A1484;
+	color: white
+}
+/* Column container */
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+	-ms-flex: 5%; /* IE10 */
+	flex: 5%;
+	background-color: #f1f1f1;
+}
+
+/* Main column */
+.main {
+	-ms-flex: 85%; /* IE10 */
+	flex: 85%;
+	background-color: white;
+	padding: 20px;
+}
+
+/* Footer */
+.footer {
+	padding: 10px;
+	text-align: center;
+	background: #151515;
+	color: white;
+}
+
+
+
+.section {
+	display: block;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.article {
+	margin: 10px;
+	padding: 10px;
+	max-width: 80%;
+	border: solid 5px #5A1484;
+	text-align: justify;
+	background-color: rgba(255, 255, 255, 0.6);
+
+}
+.backimg {
+	background-image: url("../images/books.jpg");
+	background-color: rgba(255, 255, 255, 0.1);
+	background-blend-mode: lighten;
+	background-position: center; /* centrer l'image → https://www.w3schools.com/cssref/pr_background-position.asp */
+	background-repeat: no-repeat; /* pas de répétition */
+	background-size: cover; /* étirer l'image */
+
+}
+
+.backimg1 {
+	background-image: url("../images/brique.jpg");
+	background-color: rgba(255, 255, 255, 0.6);
+	background-blend-mode: lighten;
+	background-position: center; /* centrer l'image → https://www.w3schools.com/cssref/pr_background-position.asp */
+	background-repeat: no-repeat; /* pas de répétition */
+	background-size: cover; /* étirer l'image */
+
+}
